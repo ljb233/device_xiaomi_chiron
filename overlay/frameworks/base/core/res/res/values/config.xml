@@ -83,4 +83,9 @@
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
                   autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
+
+    <!-- Time to give to the proximity sensor before toggling the flashlight with the Power button.
+    Set to -1 to disable the proximity sensor check at all-->
+    <integer name="config_flashlightProximityTimeout">-1</integer>
+
 </resources>
