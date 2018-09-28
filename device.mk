@@ -31,8 +31,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/synaptics_dsx.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_dsx.kl
 
 # Camera MIUI
+PRODUCT_PACKAGES += \
+    MiuiCamera
+
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/chiron.xml:system/etc/device_features/chiron.xml
+    $(LOCAL_PATH)/camera/etc/chiron.xml:system/etc/device_features/chiron.xml \
+    $(LOCAL_PATH)/camera/etc/miuicamera-permissions.xml:system/etc/default-permissions/miuicamera-permissions.xml
 
 # Properties
 include $(LOCAL_PATH)/vendor_prop.mk
